@@ -16,3 +16,22 @@ function Board:initializeTiles()
         end
     end
 end
+
+function Board:calculateMatches()
+    
+end
+
+function Board:removeMatches()
+    
+end
+
+function Board:getFallingTiles()
+end
+
+function Board:render()
+    for y =1, #self.tiles do
+        for x = 1, #self.tiles[1] do
+            self.tiles[y][x]:render(self.x,self.y)
+        end
+    end
+end
